@@ -22,13 +22,13 @@ const userSchema = new Schema({
   posts: [
     {
         type: Schema.Types.ObjectId,
-        ref: 'post',
+        ref: 'Post',
     }
   ],
   votes: [
     {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'User',
     }
 ]
 },
@@ -68,6 +68,6 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
