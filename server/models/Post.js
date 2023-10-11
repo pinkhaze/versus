@@ -1,24 +1,55 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
+// TODO: ADD COMMENTS
 const postSchema = new Schema({
-    option1: {
-        type: String, 
-        required: true,
-    },
-    option2: {
+  option1: {
+    type: String,
+    required: true,
+  },
+  option2: {
+    type: String,
+    required: true,
+  },
+  option1_votes: {
+    type: Number,
+    default: 0,
+  },
+  option2_votes: {
+    type: Number,
+    default: 0,
+  },
+  //ask if this is needed
+  postAuthor: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  //   createdAt: {
+  //     type: Date,
+  //     default: Date.now,
+  //     get: (timestamp) => dateFormat(timestamp),
+  //   },
+  comments: [
+    {
+      commentText: {
         type: String,
         required: true,
+        minlength: 1,
+        maxlength: 280,
+      },
+      commentAuthor: {
+        type: String,
+        required: true,
+      },
+      //   createdAt: {
+      //     type: Date,
+      //     default: Date.now,
+      //     get: (timestamp) => dateFormat(timestamp),
+      //   },
     },
-    option1_votes: {
-        type: Number,
-        default: 0,
-    },
-    option2_votes: {
-        type: Number,
-        default: 0,
-    },
+  ],
 });
 
-const Post = model('Post', postSchema);
+const Post = model("Post", postSchema);
 
 module.exports = Post;
