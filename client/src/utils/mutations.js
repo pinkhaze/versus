@@ -1,5 +1,4 @@
-import { gql } from '@apollo/client';
-
+import { gql } from "@apollo/client";
 export const ADD_USER = gql`
   mutation addUser($username: String!, $email: String!, $password: String!) {
     addUser(username: $username, email: $email, password: $password) {
@@ -36,24 +35,48 @@ export const LOGIN_USER = gql`
 //     }
 // `;
 
-export const CREATE_MATCHUP = gql`
-    mutation createMatchup($post1: String!, $post2: String!) {
-        createMatchup(post1: $post1, post2: $post2) {
-            _id
-            post1
-            post2
-        }
+export const ADD_POST = gql`
+  mutation addPost($post1: String!, $post2: String!) {
+    addPost(post1: $post1, post2: $post2) {
+      _id
+      post1
+      post2
+      username
+      comments {
+        _id
+        commentText
+      }
     }
+  }
 `;
 
-export const CREATE_VOTE = gql `
-    mutation createVote($_id: String!, $voteNum: Int!) {
-        createVote(_id: $_id, voteNum: $voteNum) {
-            _id
-            post1
-            post2
-            post1_votes
-            post2_votes
-        }
+export const ADD_COMMENT = gql`
+  mutation addComment($postId: ID!, $commentText: String!, $username: String!) {
+    addComment(
+      postId: $postId
+      commentText: $commentText
+      username: $username
+    ) {
+      _id
+      post1
+      post2
+      username
+      comments {
+        _id
+        commentText
+      }
     }
+  }
+`;
+
+export const CREATE_VOTE = gql`
+  mutation createVote($_id: String!, $optionNum: Int!) {
+    createVote(_id: $_id, optionNum: $optionNum) {
+      _id
+      post1
+      post2
+      post1_votes
+      post2_votes
+    }
+  }
 `;
