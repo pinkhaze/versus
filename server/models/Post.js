@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-// TODO: ADD COMMENTS
+// TODO:
 const postSchema = new Schema({
   option1: {
     type: String,
@@ -19,7 +19,7 @@ const postSchema = new Schema({
     default: 0,
   },
   //ask if this is needed
-  postAuthor: {
+  username: {
     type: String,
     required: true,
     trim: true,
@@ -37,7 +37,7 @@ const postSchema = new Schema({
         minlength: 1,
         maxlength: 280,
       },
-      commentAuthor: {
+      username: {
         type: String,
         required: true,
       },
