@@ -15,6 +15,12 @@ const typeDefs = gql`
     option2: String!
     option1_votes: Int
     option2_votes: Int
+    comments: [Comment]
+  }
+
+  type Comment{
+    commentText: String!
+    username: String!
   }
 
   type Auth {
