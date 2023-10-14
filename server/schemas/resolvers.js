@@ -19,6 +19,9 @@ const resolvers = {
     post: async (parent, { postId }) => {
       return Post.findOne({ _id: postId });
     },
+    allPosts: async(parent, args) => {
+      return Post.find();
+    }
   },
 
   Mutation: {
