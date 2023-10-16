@@ -4,8 +4,14 @@
   font-weight: 400;
 }
 
-.main-container {
-  background-color: yellow;
+body {
+  min-height: 100vh;
+}
 
+.main-content {
+  background-color: yellow;
+  min-height: 100vh;
+
+ 
 }
 

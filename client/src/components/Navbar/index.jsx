@@ -31,7 +31,7 @@ export default function Navbar () {
           <Menu borderless>
             <Container>
               <Menu.Item className='item' position='left'>
-                <Header as='h1'  style={{ fontSize: "5em" }}>VERSUS</Header>
+                <Header as='h1' style={{ fontSize: "5em" }}>VERSUS</Header>
               </Menu.Item>
               <Menu.Item position='right'>
                 <Menu.Item> 

@@ -37,6 +37,7 @@ function App() {
       <Router>
         <div className='main-container'>
             <Navbar className='navbar'/>
+            <div className="main-content">
             <Routes>
               <Route
                 path="/"
@@ -59,6 +60,7 @@ function App() {
                 element={<Dashboard />}
               />
             </Routes>
+            </div>
             <Footer/>
         </div>
       </Router>
@@ -67,3 +69,4 @@ function App() {
 }
 
 export default App;
+
