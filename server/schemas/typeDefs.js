@@ -18,7 +18,7 @@ const typeDefs = gql`
     comments: [Comment]
   }
 
-  type Comment{
+  type Comment {
     commentText: String!
     username: String!
   }

@@ -1,8 +1,7 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { User, Post } = require("../models");
 
-// TODO: ADD signTOKEN AS REQUIREMENT
-const { signToken } = require('../utils/auth');
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -27,9 +26,9 @@ const resolvers = {
   Mutation: {
     // adds user
     addUser: async (parent, { username, email, password }) => {
-      console.log(username)
+      console.log(username);
       const user = await User.create({ username, email, password });
-      console.log(user)
+      console.log(user);
       const token = signToken(user);
 
       return { token, user };
