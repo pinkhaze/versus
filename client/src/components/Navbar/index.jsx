@@ -1,24 +1,22 @@
-import { Link } from 'react-router-dom'
-import '../../styles/navbar.css'
+import { Link } from "react-router-dom";
+import "../../styles/navbar.css";
 
-import {
-  Button,
-  Container,
-  Header,
-  Menu
-} from "semantic-ui-react";
+import { Button, Container, Header, Menu } from "semantic-ui-react";
 
 const styles = {
   navbar: {
+
   display: 'flex',
   justifyContent: 'flex-end',
+
   },
   list: {
-    listStyle: 'none',
-    display: 'flex',
-    gap: '1rem',
-    fontSize: '30px',
+    listStyle: "none",
+    display: "flex",
+    gap: "1rem",
+    fontSize: "30px",
   },
+
 }
 
 export default function Navbar () {
