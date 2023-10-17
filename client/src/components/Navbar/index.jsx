@@ -37,11 +37,6 @@ export default function Navbar() {
               </Link>
             </Menu.Item>
             <Menu.Item>
-              <Link className="item" to="/vote">
-                Vote{" "}
-              </Link>
-            </Menu.Item>
-            <Menu.Item>
               <Link className="item" to="/post">
                 Create a Matchup{" "}
               </Link>

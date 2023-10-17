@@ -36,14 +36,12 @@ export const LOGIN_USER = gql`
 // `;
 
 export const ADD_POST = gql`
-  mutation addPost($post1: String!, $post2: String!, $username: String!) {
-    addPost(post1: $post1, post2: $post2, username: $username) {
+  mutation addPost($option1: String!, $option2: String!, $username: String!) {
+    addPost(option1: $option1, option2: $option2, username: $username) {
       _id
-      post1
-      post2
-      username
+      option1
+      option2
       comments {
-        _id
         commentText
       }
     }

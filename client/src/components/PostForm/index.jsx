@@ -17,11 +17,12 @@ function PostForm() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    console.log(addPost);
     try {
       const { data } = await addPost({
         variables: {
-          post1: formState.post1,
-          post2: formState.post2,
+          option1: formState.post1,
+          option2: formState.post2,
           username: Auth.getProfile().data.username,
         },
       });
@@ -29,7 +30,7 @@ function PostForm() {
       console.error(error);
     }
 
-    setFormState({ post1: "", post2: "" });
+    // setFormState({ post1: "", post2: "" });
   };
 
   const handleChange = (event) => {

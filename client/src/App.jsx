@@ -12,7 +12,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Dashboard from "./pages/Dashboard";
-import Vote from "./pages/Vote";
 import Post from "./pages/Post";
 
 import Navbar from "./components/Navbar";
@@ -46,7 +45,6 @@ function App() {
           <Navbar className="navbar" />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/vote" element={<Vote />} />
             <Route path="/post" element={<Post />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
