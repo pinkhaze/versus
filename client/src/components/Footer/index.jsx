@@ -4,7 +4,7 @@ import { Container, Grid, Header, Menu, Segment,
 function Footer() {
     return (
       <div>
-        <Segment inverted vertical style={{ padding: '5em 0em' }}>
+        <Segment inverted vertical style={{ padding: "5em 0em", backgroundColor: "#333333" }}>
           <Container>
             <Grid divided stackable>
               <Grid.Row>

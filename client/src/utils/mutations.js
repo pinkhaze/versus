@@ -63,11 +63,11 @@ export const ADD_COMMENT = gql`
       username: $username
     ) {
       _id
-      post1
-      post2
+      option1
+      option2
       username
       comments {
-        _id
+        # _id
         commentText
       }
     }
@@ -78,10 +78,10 @@ export const CREATE_VOTE = gql`
   mutation createVote($_id: String!, $optionNum: Int!) {
     createVote(_id: $_id, optionNum: $optionNum) {
       _id
-      post1
-      post2
-      post1_votes
-      post2_votes
+      option1
+      option2
+      option1_votes
+      option2_votes
     }
   }
 `;

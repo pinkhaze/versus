@@ -24,6 +24,7 @@ export const QUERY_ME = gql`
   }
 `;
 
+
 export const QUERY_POSTS = gql`
   query posts($username: String) {
     posts(username: $username) {
@@ -36,6 +37,19 @@ export const QUERY_POSTS = gql`
         commentText
         username
       }
+
+export const QUERY_USERPOSTS = gql`
+  query userPosts($username: String) {
+  userPosts(username: $username) {
+    _id
+    option1
+    option2
+    option1_votes
+    option2_votes
+    comments {
+      commentText
+      username
+
     }
   }
 `;
@@ -58,10 +72,10 @@ export const QUERY_POST = gql`
   query post($postId: ID!) {
     post(postId: $postId) {
       _id
-      post1
-      post2
-      post1_votes
-      post2_votes
+      option1
+      option2
+      option1_votes
+      option2_votes
       username
       comments {
         commentText

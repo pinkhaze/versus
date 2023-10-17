@@ -6,9 +6,10 @@ import { Button, Container, Header, Menu } from "semantic-ui-react";
 
 const styles = {
   navbar: {
-    display: "flex",
-    justifyContent: "flex-end",
-    backgroundColor: "yellow",
+
+  display: 'flex',
+  justifyContent: 'flex-end',
+
   },
   list: {
     listStyle: "none",
@@ -16,10 +17,7 @@ const styles = {
     gap: "1rem",
     fontSize: "30px",
   },
-  buttons: {
-    padding: "15px",
-  },
-};
+
 
 export default function Navbar() {
   const logout = (event) => {
@@ -93,4 +91,3 @@ export default function Navbar() {
       )}
     </div>
   );
-}
