@@ -18,7 +18,7 @@ const typeDefs = gql`
     comments: [Comment]
   }
 
-  type Comment{
+  type Comment {
     commentText: String!
     username: String!
   }
@@ -31,8 +31,9 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    posts(username: String): [Post]
+    userPosts(username: String): [Post]
     post(postId: ID!): Post
+    allPosts: [Post]
   }
 
   type Mutation {

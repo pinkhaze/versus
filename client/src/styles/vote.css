@@ -1,0 +1,20 @@
+@media (min-width: 1000px) {
+  .vote-container {
+    display: flex;
+    padding-left: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .pick {
+    font-size: 60px;
+    padding-left: 15%;
+  }
+  .choices {
+    padding-left: 25%;
+  }
+  .opt1 {
+    height: 100px;
+    width: 200px;
+    margin-bottom: 4% !important;
+  }
+}

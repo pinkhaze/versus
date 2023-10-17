@@ -1,11 +1,13 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 }
 
-.main-container {
-  background-color: yellow;
-
+body {
+  min-height: 100vh;
 }
 
+.main-content {
+  background-color: rgb(151, 135, 211);
+  min-height: 100vh;
+}

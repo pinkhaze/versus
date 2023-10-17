@@ -11,7 +11,7 @@ connection.once('open', async () => {
     // Delete the collections if they exist
     await User.deleteMany();
     await Post.deleteMany();
-    let userData = await User.insertMany(users)
+    let userData = await User.insertMany(users, {runValidators: true})
     console.log(userData);
     for (let i = 0; i < posts.length; i++) {
         const element = posts[i];

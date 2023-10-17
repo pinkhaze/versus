@@ -20,29 +20,46 @@ export const QUERY_ME = gql`
   }
 `;
 
-export const QUERY_POSTS = gql`
-  query getPosts($_id: String) {
-    post(_id: $_id) {
-      _id
-      post1
-      post2
-      post1_votes
-      post2_votes
+export const QUERY_USERPOSTS = gql`
+  query userPosts($username: String) {
+  userPosts(username: $username) {
+    _id
+    option1
+    option2
+    option1_votes
+    option2_votes
+    comments {
+      commentText
       username
     }
   }
+}
 `;
-export const QUERY_SINGLE_POST = gql`
-  query getSinglePost($postId: ID!) {
+export const QUERY_ALLPOSTS = gql`
+  query allPosts {
+  allPosts {
+    _id
+    option1
+    option2
+    option1_votes
+    option2_votes
+    comments {
+      commentText
+      username
+    }
+  }
+}
+`;
+export const QUERY_POST = gql`
+  query post($postId: ID!) {
     post(postId: $postId) {
       _id
-      post1
-      post2
-      post1_votes
-      post2_votes
+      option1
+      option2
+      option1_votes
+      option2_votes
       username
       comments {
-        _id
         commentText
         username
       }
