@@ -12,7 +12,6 @@ const styles = {
   navbar: {
   display: 'flex',
   justifyContent: 'flex-end',
-  backgroundColor: 'yellow'
   },
   list: {
     listStyle: 'none',
@@ -20,15 +19,12 @@ const styles = {
     gap: '1rem',
     fontSize: '30px',
   },
-  buttons: {
-    padding: '15px'
-  }
 }
 
 export default function Navbar () {
     return (
       <div>
-          <Menu borderless>
+          <Menu borderless >
             <Container>
               <Menu.Item className='item' position='left'>
                 <Header as='h1' style={{ fontSize: "5em" }}>VERSUS</Header>
