@@ -6,6 +6,10 @@ export const QUERY_USER = gql`
       _id
       username
       email
+      option1
+      option2
+      option1_votes
+      option2_votes
     }
   }
 `;
@@ -22,33 +26,33 @@ export const QUERY_ME = gql`
 
 export const QUERY_POSTS = gql`
   query posts($username: String) {
-  posts(username: $username) {
-    _id
-    option1
-    option2
-    option1_votes
-    option2_votes
-    comments {
-      commentText
-      username
+    posts(username: $username) {
+      _id
+      option1
+      option2
+      option1_votes
+      option2_votes
+      comments {
+        commentText
+        username
+      }
     }
   }
-}
 `;
 export const QUERY_ALLPOSTS = gql`
   query allPosts {
-  allPosts {
-    _id
-    option1
-    option2
-    option1_votes
-    option2_votes
-    comments {
-      commentText
-      username
+    allPosts {
+      _id
+      option1
+      option2
+      option1_votes
+      option2_votes
+      comments {
+        commentText
+        username
+      }
     }
   }
-}
 `;
 export const QUERY_POST = gql`
   query post($postId: ID!) {
