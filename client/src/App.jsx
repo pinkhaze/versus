@@ -43,7 +43,7 @@ function App() {
       <Router>
 
         <div className='main-container'>
-            <Navbar className='navbar'/>
+          <Navbar className='navbar'/>
             <div className="main-content">
             <Routes>
               <Route

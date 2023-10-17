@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button, Container, Grid, Header, Segment } from "semantic-ui-react";
-
-import Carousel from '../components/Carousel'
+import Carousel from "../components/Carousel"
 
 const Home = () => {
   return (
@@ -10,26 +9,25 @@ const Home = () => {
         <Grid container stackable verticalAlign='middle' >
           <Grid.Row >
             <Grid.Column width={8} >
-              <Container className="points">
+              <Container className="points" style={{ padding: '1.3em'}}>
                 <Header as='h3' style={{ fontSize: '1.8em' }} >
                   Versus - The Ultimate Decision-Maker App!
                 </Header >
                 <p style={{ fontSize: '1.1em' }} >
                   Is it possible to compare the thrill of driving a Honda to the joy of indulging in an ice cream sandwich? We're about to find out!
                 </p>
-                <Header as='h3' style={{ fontSize: '1.4em' }} >
+                <Header as='h3' style={{ fontSize: '1.3em' }} >
                   Get ready to make some tough choices! 
                 </Header >
                   <p style={{ fontSize: '1em' }} >
                   We present you with side-by-side comparisons, and it's up to you to decide which one reigns supreme.
                 </p>
-                <Header as='h3' style={{ fontSize: '1.4em' }} >
+                <Header as='h3' style={{ fontSize: '1.3em' }} >
                   Share Your Verdict:
                 </Header >
                   <p style={{ fontSize: '1em' }} >
                   Think you've made the ultimate choice? Share your decision with friends and see if they agree or disagree!
                 </p>
-                
               </Container>
             </Grid.Column >
             <Grid.Column floated='right' width={6}>

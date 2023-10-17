@@ -1,8 +1,11 @@
 import { Container } from 'semantic-ui-react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import '../../styles/Home.css'
+
+// import CarouselPhotoOne from "./assets/images/carousel-photo-one.PNG";
+
 
 function Carousel() {
   const settings = {
@@ -20,6 +23,7 @@ function Carousel() {
         <Container >
         <Slider {... settings}>
           <div className="box fix">
+         
           </div>
           <div className="box fix">
           </div>
