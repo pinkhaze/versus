@@ -1,34 +1,36 @@
-import { CarouselProvider, Image, Slide, Slider } from "pure-react-carousel";
-import { Divider } from "semantic-ui-react";
+import { Container } from 'semantic-ui-react';
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import '../../styles/Home.css'
 
-import DotGroup from "../../components/DotGroup";
+function Carousel() {
+  const settings = {
+    dots: true,
+    lazyLoad: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 2
+  };
 
-const Carousel = () => (
-  <div>
-      <CarouselProvider
-        naturalSlideWidth={1}
-        naturalSlideHeight={1}
-        totalSlides={3}
-      >
-    <Slider>
-      <Slide tag="a" index={0}>
-        <Image src="https://picsum.photos/200/300" />
-      </Slide>
-      <Slide tag="a" index={1}>
-        <Image circular src="https://picsum.photos/200/300" />
-      </Slide>
-      <Slide tag="a" index={2}>
-        <Image src="https://picsum.photos/200/300" />
-      </Slide>
-    </Slider>
-    <Divider />
-    <DotGroup slides={3} />
-  </CarouselProvider>
+    return (
+      <div className="carousel-container">
+        <Container >
+        <Slider {... settings}>
+          <div className="box fix">
+          </div>
+          <div className="box fix">
+          </div>
+          <div className="box fix">
+          </div>
+          </Slider>
+        </Container>
+    
+        
+      </div>
+    );
+  }
 
-
-
-  </div>
-
-);
-
-export default Carousel;
+  export default Carousel;
