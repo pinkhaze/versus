@@ -11,7 +11,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate("posts");
     },
-    posts: async (parent, { username }) => {
+    userPosts: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Post.find(params).sort({ createdAt: -1 });
     },
