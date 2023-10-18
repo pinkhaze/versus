@@ -16,7 +16,7 @@ const Login = () => {
 
     return (
         <div className="ui vertical segment">
-        <div style={styles.grid} className="ui middle aligned stackable grid container">
+        <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
             <div className="row">
                 <div className="eight wide column">
                     <h3 className="ui-header">LOGIN.</h3>

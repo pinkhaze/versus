@@ -1,5 +1,6 @@
 import { Divider } from "semantic-ui-react";
 import PostForm from "../components/PostForm";
+
 const styles = {
   grid: {
     marginTop: "50px",
@@ -14,10 +15,7 @@ const styles = {
 const Post = () => {
   return (
     <div className="ui vertical segment">
-      <div
-        style={styles.grid}
-        className="ui middle aligned stackable grid container"
-      >
+      <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
         <div className="row">
           <div className="eight wide column">
             <h3 className="ui-header">Create Your Matchup</h3>

@@ -41,31 +41,31 @@ function LoginForm() {
     };
 
     return (
-        <Form className='form' onSubmit={handleFormSubmit}>
-                <Form.Field
-                    id='form-input-control-email'
-                    control={Input}
-                    label='email'
-                    type="text"
-                    name="email"
-                    value={formState.email}
-                    onChange={handleChange}
-                />
-                 <Form.Field
-                    id='form-input-control-password'
-                    control={Input}
-                    label='password'
-                    placeholder='*******'
-                    type="password"
-                    name="password"
-                    value={formState.password}
-                    onChange={handleChange}
-                />
-                <Form.Field
-                    id='form-button-control-public'
-                    control={Button}
-                    content='Submit'
-                />
+      <Form className='form' onSubmit={handleFormSubmit}>
+        <Form.Field
+          id='form-input-control-email'
+          control={Input}
+          label='email'
+          type="text"
+          name="email"
+          value={formState.email}
+          onChange={handleChange}
+        />
+        <Form.Field
+          id='form-input-control-password'
+          control={Input}
+          label='password'
+          placeholder='*******'
+          type="password"
+          name="password"
+          value={formState.password}
+          onChange={handleChange}
+        />
+        <Form.Field
+          id='form-button-control-public'
+          control={Button}
+          content='Submit'
+        />
         </Form>
     );
   }

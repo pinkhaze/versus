@@ -1,9 +1,9 @@
 import { Form, Input, Button } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import { useState } from "react";
 import { QUERY_USERPOSTS } from "../../utils/queries";
 // import { REMOVE_POST } from "../../utils/mutations";
-import { Link } from "react-router-dom";
 
 import Auth from "../../utils/auth";
 import "../../styles/profile.css";

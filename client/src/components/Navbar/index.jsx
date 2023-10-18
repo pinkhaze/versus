@@ -1,21 +1,7 @@
 import { Link } from "react-router-dom";
-import "../../styles/navbar.css";
-import Auth from "../../utils/auth";
-
 import { Button, Container, Header, Menu } from "semantic-ui-react";
-
-const styles = {
-  navbar: {
-    display: "flex",
-    justifyContent: "flex-end",
-  },
-  list: {
-    listStyle: "none",
-    display: "flex",
-    gap: "1rem",
-    fontSize: "30px",
-  },
-};
+import Auth from "../../utils/auth";
+import "../../styles/navbar.css";
 
 export default function Navbar() {
   const logout = (event) => {
@@ -26,7 +12,7 @@ export default function Navbar() {
   return (
     <div>
       {Auth.loggedIn() ? (
-        <Menu borderless>
+        <Menu borderless className="navbar">
           <Container>
             <Menu.Item className="item" position="left">
               <Header as="h1" style={{ fontSize: "5em" }}>
@@ -76,13 +62,13 @@ export default function Navbar() {
                   Create a Matchup{" "}
                 </Link>
               </Menu.Item>
+                <Link to={'/login'}>
+                  <Button className='big teal'>Login{" "}</Button >
+                </Link >
+                <Link to={'/signup'}>
+                  <Button className='big teal'>Signup{" "}</Button >
+                </Link >
               <Menu.Item>
-                <Link className="item" to="/login">
-                  Login{" "}
-                </Link>
-                <Link className="item" to="/signup">
-                  Signup{" "}
-                </Link>
               </Menu.Item>
             </Menu.Item>
           </Container>
