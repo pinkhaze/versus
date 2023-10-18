@@ -2,14 +2,16 @@
 
 ## Description 
 
-Versus is an engaging and interactive platform created to allow users to make decisions by comparing two items in a friendly, versus style competition. Whether its a versus between two different cars, to which ice cream is the best, Versus allows you to choose your vote and see what the community also thinks.
+Versus is an engaging and interactive platform created to allow users to make decisions by comparing two items in a friendly, versus style competition. Whether its a versus between what car is faster, which anime character is stronger, or even something as simple as what color is better than the other, Versus allows users to cast their vote and see what the community also thinks! 
 
 
 ## Getting Started and Usage
 
 To get started with Versus, simply visit our website at (), and sign up for a free account. 
 
-(Insert Image)
+![home page](https://github.com/pinkhaze/versus/assets/131290908/c67c42de-f6db-46e7-b2d5-c37e68e364b4)
+
+![signup page](https://github.com/pinkhaze/versus/assets/131290908/d8ebf5e7-e92d-44a9-aac3-cbc99e090cfa)
 
 
 Once logged in, the user will be taken back to the home page where they can start casting their votes.
