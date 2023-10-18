@@ -2,7 +2,7 @@ import { Form, Input, Button } from "semantic-ui-react";
 import { useQuery, useMutation } from "@apollo/client";
 import { useState } from "react";
 import { QUERY_USERPOSTS } from "../../utils/queries";
-import { REMOVE_POST } from "../../utils/mutations";
+// import { REMOVE_POST } from "../../utils/mutations";
 import { Link } from "react-router-dom";
 
 import Auth from "../../utils/auth";
@@ -15,32 +15,32 @@ const ProfileDashboard = () => {
       username: Auth.getProfile().data.username,
     },
   });
-  //deleting the user's posts
-  const [formState, setFormState] = useState({
-    _id: "",
-  });
-  const [removePost] = useMutation(REMOVE_POST);
+  // //deleting the user's posts
+  // const [formState, setFormState] = useState({
+  //   _id: "",
+  // });
+  // const [removePost] = useMutation(REMOVE_POST);
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const { data: mutationData } = await removePost({
-        variables: {
-          _id: formState.id,
-        },
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     const { data: mutationData } = await removePost({
+  //       variables: {
+  //         _id: formState.id,
+  //       },
+  //     });
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
 
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
+  //   setFormState({
+  //     ...formState,
+  //     [name]: value,
+  //   });
+  // };
 
   const posts = data?.userPosts || [];
   return (
@@ -73,14 +73,14 @@ const ProfileDashboard = () => {
                 </div>
                 <div className="extra content">
                   <button className="ui button">See Comments</button>
-                  <Button
+                  {/* <Button
                     className=" ui button right floated star"
                     onChange={handleChange}
                     value={formState.id}
                     input={post.id}
                   >
                     Delete Post
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
