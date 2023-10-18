@@ -72,7 +72,7 @@ const ProfileDashboard = () => {
                   </div>
                 </div>
                 <div className="extra content">
-                  <button className="ui button">See Comments</button>
+                  {/* <button className="ui button">See Comments</button> */}
                   {/* <Button
                     className=" ui button right floated star"
                     onChange={handleChange}

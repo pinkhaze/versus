@@ -17,7 +17,7 @@ function PostForm() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(addPost);
+    // console.log(addPost);
     try {
       const { data } = await addPost({
         variables: {
