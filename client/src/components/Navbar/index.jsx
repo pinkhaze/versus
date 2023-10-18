@@ -22,6 +22,7 @@ export default function Navbar() {
     event.preventDefault();
     Auth.logout();
   };
+
   return (
     <div>
       {Auth.loggedIn() ? (
