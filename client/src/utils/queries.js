@@ -6,10 +6,6 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      option1
-      option2
-      option1_votes
-      option2_votes
     }
   }
 `;
@@ -24,10 +20,9 @@ export const QUERY_ME = gql`
   }
 `;
 
-
-export const QUERY_POSTS = gql`
-  query posts($username: String) {
-    posts(username: $username) {
+export const QUERY_USERPOSTS = gql`
+  query userPosts($username: String) {
+    userPosts(username: $username) {
       _id
       option1
       option2
@@ -37,19 +32,6 @@ export const QUERY_POSTS = gql`
         commentText
         username
       }
-
-export const QUERY_USERPOSTS = gql`
-  query userPosts($username: String) {
-  userPosts(username: $username) {
-    _id
-    option1
-    option2
-    option1_votes
-    option2_votes
-    comments {
-      commentText
-      username
-
     }
   }
 `;
@@ -77,6 +59,21 @@ export const QUERY_POST = gql`
       option1_votes
       option2_votes
       username
+      comments {
+        commentText
+        username
+      }
+    }
+  }
+`;
+export const QUERY_POSTS = gql`
+  query posts($username: String) {
+    posts(username: $username) {
+      _id
+      option1
+      option2
+      option1_votes
+      option2_votes
       comments {
         commentText
         username

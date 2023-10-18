@@ -1,7 +1,7 @@
 import { Form, Input, Button } from "semantic-ui-react";
 import { useQuery, useMutation } from "@apollo/client";
 import { useState } from "react";
-import { QUERY_POSTS } from "../../utils/queries";
+import { QUERY_USERPOSTS } from "../../utils/queries";
 import { REMOVE_POST } from "../../utils/mutations";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ import "../../styles/profile.css";
 
 const ProfileDashboard = () => {
   // getting the user's posts
-  const { data } = useQuery(QUERY_POSTS, {
+  const { data } = useQuery(QUERY_USERPOSTS, {
     variables: {
       username: Auth.getProfile().data.username,
     },
@@ -42,7 +42,7 @@ const ProfileDashboard = () => {
     });
   };
 
-  const posts = data?.posts || [];
+  const posts = data?.userPosts || [];
   return (
     <>
       <div className="container-flex">
