@@ -1,21 +1,26 @@
-.points {
+.content-box, .points {
     box-shadow: 14px 14px 0 -4px teal, 14px 14px 0 0 black;
-    border: 4px solid black;
+    border: 6px solid black;
     border-radius: 14px;  
+}
+
+.points {
     height: 380px;
 }
 
-.box {
-    background-color: #333333; 
-    height: 355px; 
+.carousel-image {
+    height: 300px;
 }
 
 .slick-slide div {
     margin: 0 1 rem;
-    border-radius: 10px;
 }
 
 .slick-next {
-    right: -25px !important;
+    right: -25px !important; 
 }
 
+.github-link {
+    display: flex;
+    flex-direction: column;
+}
