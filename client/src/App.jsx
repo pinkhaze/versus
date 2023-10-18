@@ -41,34 +41,20 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-
-        <div className='main-container'>
-          <Navbar className='navbar'/>
-            <div className="main-content">
+        <div className="main-container">
+          <Navbar className="navbar" />
+          <div className="main-content">
             <Routes>
-              <Route
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/login"
-                element={<Login />}
-              />
-               <Route
-                path="/signup"
-                element={<Signup />}
-              />
-               <Route
-                path="/profile"
-                element={<Profile />}
-              />
-              <Route
-                path="/dashboard"
-                element={<Dashboard />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/post" element={<Post />} />
+
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
-            </div>
-            <Footer/>
+          </div>
+          <Footer />
         </div>
       </Router>
     </ApolloProvider>
@@ -76,4 +62,3 @@ function App() {
 }
 
 export default App;
-
