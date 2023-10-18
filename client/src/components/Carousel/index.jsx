@@ -4,8 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../styles/home.css'
 
-// import CarouselPhotoOne from "./assets/images/carousel-photo-one.PNG";
-
+import CarouselPhotoOne from "../../assets/images/carousel-photo-one.png";
+import CarouselPhotoTwo from "../../assets/images/carousel-photo-two.png";
+import CarouselPhotoThree from "../../assets/images/carousel-photo-three.png";
 
 function Carousel() {
   const settings = {
@@ -22,17 +23,17 @@ function Carousel() {
       <div className="carousel-container">
         <Container >
         <Slider {... settings}>
-          <div className="box fix">
-         
+          <div className="carousel-image-box">
+            <img className="carousel-image" src={CarouselPhotoOne} alt="app photo one"/>
           </div>
-          <div className="box fix">
+          <div className="carousel-image-box">
+            <img className="carousel-image" src={CarouselPhotoTwo} alt="app photo one"/>
           </div>
-          <div className="box fix">
+          <div className="carousel-image-box">
+            <img className="carousel-image" src={CarouselPhotoThree} alt="app photo one"/>
           </div>
           </Slider>
         </Container>
-    
-        
       </div>
     );
   }
