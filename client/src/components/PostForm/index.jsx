@@ -30,7 +30,7 @@ function PostForm() {
       console.error(error);
     }
 
-    setFormState({ post1: "", post2: "" });
+    // setFormState({ post1: "", post2: "" });
   };
 
   const handleChange = (event) => {
