@@ -57,30 +57,28 @@ function Signup() {
           onChange={handleChange}
         />
       </Form.Group>
-
       <Form.Group widths="equal">
         <Form.Field
           id="form-input-control-error-email"
           control={Input}
           label="Email"
-          placeholder="john@doe.com"
+          placeholder="hondalover@gmail.com"
           type="email"
           name="email"
           value={formState.email}
           onChange={handleChange}
         />
       </Form.Group>
-
       <Form.Field
         id="form-input-control-name"
         control={Input}
         label="Password"
+        placeholder="********"
         type="password"
         name="password"
         value={formState.password}
         onChange={handleChange}
       />
-
       <Form.Field
         id="form-button-control-public"
         control={Button}

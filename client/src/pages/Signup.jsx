@@ -16,11 +16,11 @@ const Signup = () => {
 
     return (
         <div className="ui vertical segment">
-        <div style={styles.grid} className="ui middle aligned stackable grid container">
+        <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
             <div className="row">
                 <div className="eight wide column">
-                    <h3 className="ui-header">REGISTER.</h3>
-                    <p>Phasellus efficitur interdum tincidunt. Praesent semper facilisis libero ac malesuada. </p>
+                    <h2 className="ui-header">REGISTER.</h2>
+                    <p>Sign Up Now: It's a piece of cake... or in this case, a scoop of ice cream! </p>
                 </div>
                 <div style={styles.form} className="six wide centered column">
                     <SignupForm />
