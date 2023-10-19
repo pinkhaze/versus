@@ -43,6 +43,7 @@ const ProfileDashboard = () => {
   // };
 
   const posts = data?.userPosts || [];
+
   return (
     <>
       <div className="container-flex">
@@ -56,13 +57,13 @@ const ProfileDashboard = () => {
                 <div className="content">
                   <div className="container">
                     <div className="ui horizontal segments">
-                      <div className="ui red segment">
+                      <div className="ui teal segment">
                         <div className="content">
                           <div className="header">{post.option1}</div>
                           <div className="meta">{post.option1_votes} Votes</div>
                         </div>
                       </div>
-                      <div className="ui green segment">
+                      <div className="ui purple segment">
                         <div className="content">
                           <div className="header">{post.option2}</div>
                           <div className="meta">{post.option2_votes} Votes</div>

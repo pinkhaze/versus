@@ -16,10 +16,7 @@ const Profile = () => {
   return (
     <div className="ui vertical segment">
       <h1 className="greeting">Hello {Auth.getProfile().data.username}</h1>
-      <div
-        style={styles.grid}
-        className="ui middle aligned stackable grid container"
-      >
+      <div style={styles.grid} className="ui middle aligned stackable grid container">
         <ProfileDashboard />
       </div>
     </div>

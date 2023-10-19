@@ -1,5 +1,6 @@
-import { Divider } from 'semantic-ui-react'
-import LoginForm from '../components/LoginForm'
+import { Divider } from 'semantic-ui-react';
+import LoginForm from '../components/LoginForm';
+import './../styles/home.css';
 
 const styles = {
     grid: {
@@ -16,12 +17,12 @@ const Login = () => {
 
     return (
         <div className="ui vertical segment">
-        <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
-            <div className="row">
-                <div className="eight wide column">
-                    <h3 className="ui-header">LOGIN.</h3>
-                    <p>Phasellus efficitur interdum tincidunt. Praesent semper facilisis libero ac malesuada. </p>
-                </div>
+            <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
+                <div className="row">
+                    <div className="eight wide column">
+                        <h3 className="ui-header">LOGIN.</h3>
+                        <p>Phasellus efficitur interdum tincidunt. Praesent semper facilisis libero ac malesuada. </p>
+                    </div>
                 <div style={styles.form} className="six wide centered column">
                     <LoginForm />
                 </div>

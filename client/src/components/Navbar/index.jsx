@@ -16,7 +16,7 @@ export default function Navbar() {
         <Menu borderless inverted  className="navbar">
           <Container >
             <Menu.Item position="left">
-              <Header as="h1" style={{ fontSize: "5em" }}>
+              <Header as="h1" inverted style={{ fontSize: "5em" }}>
                 VERSUS
               </Header>
             </Menu.Item>

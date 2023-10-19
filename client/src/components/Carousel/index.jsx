@@ -22,16 +22,16 @@ function Carousel() {
     return (
       <div className="carousel-container">
         <Container >
-        <Slider {... settings}>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src={CarouselPhotoOne} alt="app photo one"/>
-          </div>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src={CarouselPhotoTwo} alt="app photo one"/>
-          </div>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src={CarouselPhotoThree} alt="app photo one"/>
-          </div>
+          <Slider {... settings}>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoOne} alt="app photo one"/>
+            </div>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoTwo} alt="app photo one"/>
+            </div>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoThree} alt="app photo one"/>
+            </div>
           </Slider>
         </Container>
       </div>
