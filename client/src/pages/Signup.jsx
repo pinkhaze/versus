@@ -23,9 +23,7 @@ const Signup = () => {
                     SIGNUP
                     </Header >
                     <p style={{ fontSize: "1.3em" }} >
-                    Choose two opposing items such as Ice Cream Vs. Cake, or two
-                    random things like an Ice Cream Sandwich vs. a Honda Civic, the
-                    choice is yours!
+                    Sign Up Now: It's as easy as enjoying an ice cream sandwich on a sunny day! 
                     </p>
                 </div>
                 <div className="six wide centered column">

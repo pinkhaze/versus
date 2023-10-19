@@ -23,10 +23,8 @@ const Login = () => {
                         <Header as='h3' style={{ fontSize: '1.8em' }}>
                         LOGIN
                         </Header >
-                        <p style={{ fontSize: '1.1em' }} >
-                        Choose two opposing items such as Ice Cream Vs. Cake, or two
-                        random things like an Ice Cream Sandwich vs. a Honda Civic, the
-                        choice is yours!
+                        <p style={{ fontSize: '1.3em' }} >
+                        Ready to Make Your Choice? Please log in to access your matchups and join the debate!
                         </p>
                     </div>
                 <div style={styles.form} className="six wide centered column">
