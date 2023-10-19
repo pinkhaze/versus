@@ -4,19 +4,6 @@ import Auth from "../../utils/auth";
 
 import { Button, Container, Header, Menu } from "semantic-ui-react";
 
-const styles = {
-  navbar: {
-    display: "flex",
-    justifyContent: "flex-end",
-  },
-  list: {
-    listStyle: "none",
-    display: "flex",
-    gap: "1rem",
-    fontSize: "30px",
-  },
-};
-
 export default function Navbar() {
   const logout = (event) => {
     event.preventDefault();
@@ -26,62 +13,62 @@ export default function Navbar() {
   return (
     <div>
       {Auth.loggedIn() ? (
-        <Menu borderless>
-          <Container>
-            <Menu.Item className="item" position="left">
-              <Header as="h1" style={{ fontSize: "5em" }}>
+        <Menu borderless inverted  className="navbar">
+          <Container >
+            <Menu.Item position="left">
+              <Header as="h1" inverted style={{ fontSize: "5em" }}>
                 VERSUS
               </Header>
             </Menu.Item>
             <Menu.Item position="right">
               <Menu.Item>
                 <Link className="item" to="/">
-                  Home{" "}
+                  HOME{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link className="item" to="/post">
-                  Create a Matchup{" "}
+                  MATCHUP{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link className="item" to="/profile">
-                  Profile{" "}
+                  PROFILE{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Button className="item" onClick={logout}>
-                  Logout{" "}
+                  LOGOUT{" "}
                 </Button>
               </Menu.Item>
             </Menu.Item>
           </Container>
         </Menu>
       ) : (
-        <Menu borderless>
+        <Menu borderless inverted className="navbar">
           <Container>
-            <Menu.Item className="item" position="left">
-              <Header as="h1" style={{ fontSize: "5em" }}>
+            <Menu.Item position="left">
+              <Header as="h1" inverted style={{ fontSize: "5em" }}>
                 VERSUS
               </Header>
             </Menu.Item>
             <Menu.Item position="right">
               <Menu.Item>
                 <Link className="item" to="/">
-                  Home{" "}
+                  HOME{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link className="item" to="/post">
-                  Create a Matchup{" "}
+                  MATCHUP{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link className="item" to="/login">
-                  Login{" "}
+                  LOGIN{" "}
                 </Link>
                 <Link className="item" to="/signup">
-                  Signup{" "}
+                  SIGNUP{" "}
                 </Link>
               </Menu.Item>
             </Menu.Item>
