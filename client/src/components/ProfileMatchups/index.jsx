@@ -4,6 +4,7 @@ import { useState } from "react";
 import { QUERY_USERPOSTS } from "../../utils/queries";
 // import { REMOVE_POST } from "../../utils/mutations";
 import { Link } from "react-router-dom";
+import { CREATE_VOTE } from '../../utils/mutations';
 
 import Auth from "../../utils/auth";
 import "../../styles/profile.css";
@@ -15,6 +16,10 @@ const ProfileDashboard = () => {
       username: Auth.getProfile().data.username,
     },
   });
+  const [createVote, { error }] = useMutation(CREATE_VOTE)
+  // const handleVote = (optionNum) => {
+    console.log(optionNum);
+  }
   // //deleting the user's posts
   // const [formState, setFormState] = useState({
   //   _id: "",
@@ -60,12 +65,18 @@ const ProfileDashboard = () => {
                         <div className="content">
                           <div className="header">{post.option1}</div>
                           <div className="meta">{post.option1_votes} Votes</div>
+                          <button className="btn btn-info" onClick={() => handleVote(1)}>
+                            Vote
+                          </button>
                         </div>
                       </div>
                       <div className="ui green segment">
                         <div className="content">
                           <div className="header">{post.option2}</div>
                           <div className="meta">{post.option2_votes} Votes</div>
+                          <button className="btn btn-info" onClick={() => handleVote(2)}>
+                            Vote
+                          </button>
                         </div>
                       </div>
                     </div>
