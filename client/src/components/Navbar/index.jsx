@@ -28,7 +28,7 @@ export default function Navbar() {
               </Menu.Item>
               <Menu.Item>
                 <Link className="item" to="/dashboard">
-                  Dashboard{" "}
+                  DASHBOARD{" "}
                 </Link>
               </Menu.Item>
               <Menu.Item>
