@@ -65,7 +65,6 @@ const ProfileDashboard = () => {
                         <div className="content">
                           <div className="header">{post.option1}</div>
                           <div className="meta">{post.option1_votes} Votes</div>
-                          {/* handle voting */}
                           <button className="btn btn-info" onClick={() => handleVote(1)}>
                             Vote
                           </button>
