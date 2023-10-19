@@ -31,7 +31,6 @@ function Carousel() {
             </div>
             <div className="carousel-image-box">
               <img className="carousel-image" src="https://i.ibb.co/rHK53RP/carousel-photo-two.png" alt="app photo three"/>
-              https://i.ibb.co/rHK53RP/carousel-photo-two.png
             </div>
           </Slider>
         </Container>
