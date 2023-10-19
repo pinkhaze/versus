@@ -50,7 +50,7 @@ function Signup() {
         <Form.Field
           id="form-input-control-name"
           control={Input}
-          label="Name"
+          label="Username"
           type="text"
           name="username"
           value={formState.username}

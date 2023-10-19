@@ -1,3 +1,4 @@
+import { Header} from 'semantic-ui-react';
 import { Form, Input, Button } from "semantic-ui-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -71,10 +72,9 @@ function PostForm() {
           />
         </Form>
       ) : (
-        <p>
-          You need to be logged in to create a matchup. Please{" "}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
+        <Header as='h3' style={{ fontSize: '1.8em' }} > You need to be logged in to create a matchup. Please{" "}
+          <Link to="/login" style={{ textDecoration: 'none' }}>login</Link> or <Link to="/signup" className="link">signup.</Link>
+        </Header >
       )}
     </div>
   );

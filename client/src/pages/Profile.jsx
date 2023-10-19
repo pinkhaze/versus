@@ -1,6 +1,7 @@
 import ProfileDashboard from "../components/ProfileMatchups";
 import "../styles/profile.css";
 import Auth from "../utils/auth";
+
 const styles = {
   grid: {
     marginTop: "50px",

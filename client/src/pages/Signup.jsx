@@ -1,4 +1,4 @@
-import { Divider } from 'semantic-ui-react'
+import { Header, Divider } from 'semantic-ui-react'
 import SignupForm from '../components/SignupForm'
 
 const styles = {
@@ -8,7 +8,7 @@ const styles = {
         minHeight: '600px',
     },
     divider: {
-        height: '200px'
+        height: '200px',
     },
 }
 
@@ -19,10 +19,16 @@ const Signup = () => {
         <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
             <div className="row">
                 <div className="eight wide column">
-                    <h2 className="ui-header">REGISTER.</h2>
-                    <p>Sign Up Now: It's a piece of cake... or in this case, a scoop of ice cream! </p>
+                    <Header as='h3' style={{ fontSize: '1.8em' }}>
+                    SIGNUP
+                    </Header >
+                    <p style={{ fontSize: "1.3em" }} >
+                    Choose two opposing items such as Ice Cream Vs. Cake, or two
+                    random things like an Ice Cream Sandwich vs. a Honda Civic, the
+                    choice is yours!
+                    </p>
                 </div>
-                <div style={styles.form} className="six wide centered column">
+                <div className="six wide centered column">
                     <SignupForm />
                 </div>
             </div>

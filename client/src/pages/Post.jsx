@@ -1,4 +1,5 @@
-import { Divider } from "semantic-ui-react";
+import { Header, Divider } from "semantic-ui-react";
+
 import PostForm from "../components/PostForm";
 
 const styles = {
@@ -18,18 +19,20 @@ const Post = () => {
       <div style={styles.grid} className="ui middle aligned stackable grid container content-box">
         <div className="row">
           <div className="eight wide column">
-            <h3 className="ui-header">Create Your Matchup</h3>
-            <p>
-              Choose two opposing items such as Ice Cream Vs. Cake, or two
-              random things like an Ice Cream Sandwich vs. a Honda Civic, the
-              choice is yours!
-            </p>
+            <Header as="h3" style={{ fontSize: "1.8em" }} >
+              CREATE A MATCHUP
+            </Header >
+              <p style={{ fontSize: "1.1em" }} >
+                Choose two opposing items such as Ice Cream Vs. Cake, or two
+                random things like an Ice Cream Sandwich vs. a Honda Civic, the
+                choice is yours!
+              </p>
           </div>
           <div style={styles.form} className="six wide centered column">
             <PostForm />
           </div>
         </div>
-        <Divider style={styles.divider} vertical></Divider>
+        <Divider vertical style={styles.divider} ></Divider>
       </div>
     </div>
   );
