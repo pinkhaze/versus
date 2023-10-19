@@ -1,4 +1,4 @@
-import { Container, Grid, Header, Menu, Segment, Form, Button, Message } from "semantic-ui-react";
+import { Container, Grid, Header, Menu, Segment, Form, Button } from "semantic-ui-react";
 
 function Footer() {
     return (
