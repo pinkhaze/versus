@@ -68,7 +68,7 @@ export const ADD_COMMENT = gql`
 `;
 
 export const CREATE_VOTE = gql`
-  mutation createVote($_id: String!, $optionNum: Int!) {
+  mutation createVote($_id: String!, $optionNum: String!) {
     createVote(_id: $_id, optionNum: $optionNum) {
       _id
       option1

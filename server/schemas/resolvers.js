@@ -93,18 +93,22 @@ const resolvers = {
     },
 
     createVote: async (parent, { _id, optionNum }) => {
+      console.log(optionNum);
       const vote = await Post.findOneAndUpdate(
         { _id },
-        { $inc: { [`option${optionNum}`]: 1 } },
+        { $inc: { [optionNum] : 1 } },
         { new: true }
       );
+      console.log(vote);
+      return vote;
     },
     deleteVote: async (parent, { _id, optionNum }) => {
       const vote = await Post.findOneAndUpdate(
         { _id },
-        { $inc: { [`option${optionNum}`]: -1 } },
+        { $inc: { [`option${optionNum}_votes`]: -1 } },
         { new: true }
       );
+      return vote;
     },
   },
 };
