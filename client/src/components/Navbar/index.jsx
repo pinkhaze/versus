@@ -40,6 +40,11 @@ export default function Navbar() {
                 </Link>
               </Menu.Item>
               <Menu.Item>
+                <Link className="item" to="/dashboard">
+                  Dashboard{" "}
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
                 <Link className="item" to="/post">
                   Create a Matchup{" "}
                 </Link>
