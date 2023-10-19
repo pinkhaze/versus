@@ -5,11 +5,12 @@
 }
 
 .points {
-    height: 380px;
+    height: 390px;
 }
 
 .carousel-image {
-    height: 300px;
+    height: 340px;
+    width: 408px;
 }
 
 .slick-slide div {

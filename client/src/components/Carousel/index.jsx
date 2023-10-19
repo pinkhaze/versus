@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../styles/home.css'
 
+import CarouselPhotoOne from "../../assets/images/carousel-photo-one.png";
+import CarouselPhotoTwo from "../../assets/images/carousel-photo-two.png";
+import CarouselPhotoThree from "../../assets/images/carousel-photo-three.png";
 
 function Carousel() {
   const settings = {
@@ -13,22 +16,22 @@ function Carousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 2
+    initialSlide: 3
   };
 
     return (
       <div className="carousel-container">
         <Container >
-        <Slider {... settings}>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src="https://i.ytimg.com/vi/2L_D5fBq1ao/maxresdefault.jpg" alt="goku vs luffy"/>
-          </div>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src="https://i.ytimg.com/vi/NtMkWjmBVe8/maxresdefault.jpg" alt="kakshi vs gojo"/>
-          </div>
-          <div className="carousel-image-box">
-            <img className="carousel-image" src="https://i.ytimg.com/vi/ZvLxn3km2qs/maxresdefault.jpg" alt="Marvel vs DC"/>
-          </div>
+          <Slider {... settings}>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoOne} alt="app photo one"/>
+            </div>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoTwo} alt="app photo one"/>
+            </div>
+            <div className="carousel-image-box">
+              <img className="carousel-image" src={CarouselPhotoThree} alt="app photo one"/>
+            </div>
           </Slider>
         </Container>
       </div>
