@@ -18,7 +18,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
   // uri: "http://localhost:3001/graphql",
 });
 
@@ -46,9 +46,9 @@ function App() {
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/login" element={<Login />} />
               <Route path="/post" element={<Post />} />
-
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/dashboard" element={<Dashboard />} />
