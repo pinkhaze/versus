@@ -17,7 +17,7 @@ const ProfileDashboard = () => {
     },
   });
   const [createVote, { error }] = useMutation(CREATE_VOTE)
-  // const handleVote = (optionNum) => {
+  const handleVote = (optionNum) => {
     console.log(optionNum);
   }
   // //deleting the user's posts
